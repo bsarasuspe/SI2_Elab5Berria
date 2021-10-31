@@ -19,15 +19,25 @@ public class Student {
 	private PreconditionsInterface preconditions;
 	private SubjectQuotesInterface subjectQuotes;
 	
+	public void setDeduction(DeductionInterface d) {
+		this.deduction = d;
+	}
+	
+	public void setPrecondition(PreconditionsInterface p) {
+		this.preconditions = p;
+	}
+	
+	public void setSubjectQuotes(SubjectQuotesInterface s) {
+		this.subjectQuotes = s;
+	}
+	
 	// Irakasgai batean matrikulatzen duen metodoa.
 	public void register(String subject) {
 		
 		// Aurrebaldintzak konprobatzen dira
-		
 		boolean isPosible = deduction.isPosible(subject , subjectRecord);
 		
 			if (isPosible) {
-				
 				// Dedukzioa kalkulatu sex eta edadearen arabera
 				int percentage = deduction.calcDeduction(sex, year);
 				
@@ -37,8 +47,7 @@ public class Student {
 				// HashMap batean gordetzen du eta ordaindu behar duen balioa eguneratu
 				subjectRecord.put(subject,null);
 				toCharge = toCharge+(quote-percentage*quote/100); 
-			
 			}	
+		System.out.println(subject+" irakasgaia erregistratuta!");
 	}
-
 }
