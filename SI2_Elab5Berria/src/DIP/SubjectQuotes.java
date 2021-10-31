@@ -1,9 +1,13 @@
 package DIP;
 
-public class SubjectQuotes {
-
+public class SubjectQuotes implements SubjectQuotesInterface {
+	
+	public SubjectQuotes() {
+	}
+	
+	
 	public int getPrice(String subject) {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 

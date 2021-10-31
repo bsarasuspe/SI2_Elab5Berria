@@ -3,8 +3,13 @@ package DIP;
 public class main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//se lia
+		
+		Student s1 = new Student();
+		Deduction d1 = new Deduction();
+		Preconditions p1 =  new Preconditions();
+		SubjectQuotes sq1 = new SubjectQuotes();
+		
+		
 	}
 
 }

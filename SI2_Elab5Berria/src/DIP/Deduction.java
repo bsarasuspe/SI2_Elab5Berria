@@ -1,10 +1,22 @@
 package DIP;
 
-public class Deduction {
+import java.util.HashMap;
 
+public class Deduction implements DeductionInterface {
+
+	
+	public Deduction(){
+	}
+	
 	public int calcDeduction(String sex, String year) {
-		// TODO Auto-generated method stub
+		
 		return 0;
+	}
+
+	@Override
+	public boolean isPosible(String subject, HashMap<String, Integer> subjectRecord) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

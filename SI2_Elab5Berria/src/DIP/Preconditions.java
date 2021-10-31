@@ -2,11 +2,14 @@ package DIP;
 
 import java.util.HashMap;
 
-public class Preconditions {
-
+public class Preconditions implements PreconditionsInterface {
+	
+	public Preconditions() {
+	}
+	
 	public boolean isPosible(String subject, HashMap<String, Integer> subjectRecord) {
-		// TODO Auto-generated method stub
-		return false;
+
+		return true;
 	}
 
 }
