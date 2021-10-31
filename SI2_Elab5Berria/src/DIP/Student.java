@@ -31,7 +31,7 @@ public class Student {
 				
 				// HashMap batean gordetzen du eta ordaindu behar duen balioa eguneratu
 				subjectRecord.put(subject,null);
-				toCharge = toCharge+(quote-percentage*quote/100);
+				toCharge = toCharge+(quote-percentage*quote/100); 
 			
 			}	
 	}
