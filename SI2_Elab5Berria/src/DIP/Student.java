@@ -35,7 +35,7 @@ public class Student {
 	public void register(String subject) {
 		
 		// Aurrebaldintzak konprobatzen dira
-		boolean isPosible = deduction.isPosible(subject , subjectRecord);
+		boolean isPosible = preconditions.isPosible(subject , subjectRecord);
 		
 			if (isPosible) {
 				// Dedukzioa kalkulatu sex eta edadearen arabera
