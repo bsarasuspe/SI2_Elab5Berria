@@ -6,6 +6,6 @@ public interface ProjectInterface {
 
 	void loadAllFiles();
 
-	void storeAllFiles();
+	//void storeAllFiles();
 
 }

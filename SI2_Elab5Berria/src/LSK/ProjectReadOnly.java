@@ -17,7 +17,6 @@ public class ProjectReadOnly implements ProjectInterface {
 			f.loadFile();
 	}
 	
-	@Override
 	public void storeAllFiles(){
 		for (ProjectFile f:files)
 			f.storeFile();

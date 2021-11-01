@@ -15,7 +15,6 @@ public class Deduction implements DeductionInterface {
 
 	@Override
 	public boolean isPosible(String subject, HashMap<String, Integer> subjectRecord) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

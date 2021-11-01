@@ -14,7 +14,7 @@ public class main {
 		p.addProject(f3);
 		
 		p.loadAllFiles();
-		p.storeAllFiles();
+		((ProjectReadWrite) p).storeAllFiles();
 	}
 
 }
