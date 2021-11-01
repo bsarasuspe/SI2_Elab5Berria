@@ -2,23 +2,22 @@ package LSK;
 
 import java.util.Vector;
 
-public class ProjectReadWrite implements ProjectInterface {
+public class ProjectReadWrite implements ReadProjectInterface {
 
-	public Vector<ProjectFile> files=new Vector<ProjectFile>();
+	public Vector<ReadWriteInterface> files=new Vector<ReadWriteInterface>();
 	
-	@Override
-	public void addProject(ProjectFile p){
+	public void addProject(ReadWriteInterface p){
 		files.add(p);
 	}
 	
 	@Override
 	public void loadAllFiles(){
-		for (ProjectFile f:files)
+		for (ReadWriteInterface f:files)
 			f.loadFile();
 	}
 	
 	public void storeAllFiles(){
-		for (ProjectFile f:files)
+		for (ReadWriteInterface f:files)
 			f.storeFile();
 	}
 }

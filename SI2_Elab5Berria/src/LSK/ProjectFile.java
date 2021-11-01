@@ -4,6 +4,6 @@ public interface ProjectFile {
 
 	void loadFile();
 
-	void storeFile();
+	//void storeFile();
 
 }

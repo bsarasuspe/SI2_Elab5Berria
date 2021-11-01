@@ -1,6 +1,6 @@
 package LSK;
 
-public class ReadWriteProjectFile implements ProjectFile {
+public class ReadWriteProjectFile implements ReadWriteInterface{
 
 	public String filePath;
 	
@@ -8,7 +8,7 @@ public class ReadWriteProjectFile implements ProjectFile {
 		this.filePath=filePath;
 	}
 	
-	@Override
+	
 	public void loadFile(){
 		System.out.println("file loaded from "+filePath);
 	}
