@@ -12,11 +12,5 @@ public class ReadOnlyProjectFile implements ProjectFile {
 	public void loadFile() {
 		System.out.println("file loaded from "+filePath);
 	}
-
-	@Override
-	public void storeFile() {
-		// TODO Auto-generated method stub
-		
-	}
 }
 
