@@ -6,7 +6,7 @@ public class ProjectReadOnly implements ProjectInterface {
 
 	public Vector<ProjectFile> files=new Vector<ProjectFile>();
 	
-	@Override
+
 	public void addProject(ProjectFile p){
 		files.add(p);
 	}
@@ -16,9 +16,9 @@ public class ProjectReadOnly implements ProjectInterface {
 		for (ProjectFile f:files)
 			f.loadFile();
 	}
-	
+	/*
 	public void storeAllFiles(){
 		for (ProjectFile f:files)
 			f.storeFile();
-	}
+	}*/
 }
